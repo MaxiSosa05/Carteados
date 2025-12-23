@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.header-div{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.header-div-h1{
+    font-family: 'Bebas Neue';
+}
+
+
+.header-div-h2{
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+}
