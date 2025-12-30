@@ -8,6 +8,7 @@ const juegos = [
 { nombre: "chin", dire: "chin.html" },
 { nombre: "el 9", dire: "el_9.html" },
 { nombre: "blackjack", dire: "blackjack.html" },
+{ nombre: "jodete", dire: "jodete.html" },
 ];
 
 
@@ -20,7 +21,7 @@ function mostrarJuegos(lista) {
 
   lista.forEach(juego => {
     contenedorJuegos.innerHTML += `
-        <a href="${juego.dire}" class="juego-card">
+        <a href="BLOGS/${juego.dire}" class="juego-card">
             <h2 class="juego-card-h2">${juego.nombre}</h2>
         </a>
     `;
