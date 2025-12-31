@@ -76,7 +76,7 @@ body{
 
 
 .paso{
-    padding: 30px;
+    padding: 15px;
     color: #0AD138;
 
     font-size: clamp(48px, 6vw, 72px);
@@ -87,7 +87,7 @@ body{
 /*TRUCO BLOG ESPECIFICO*/
 
 
-.section-1{
+.Truco-section-1{
     background-color: red;
     display: flex;
     justify-content: space-evenly;
@@ -98,28 +98,37 @@ body{
 
 }
 
-.section-1-exp , .section-1-val{
+.Truco-section-1-exp , .Truco-section-1-val{
     background-color: aqua;
     outline: #000 solid 1px;
-    width: 50%;
     height: 50%;
 }
 
-.section-1-val h3{
+
+.Truco-section-1-exp{
+    width: 75%;
+}
+
+.Truco-section-1-val{
+    width: 25%;
+    overflow-y: auto;
+}
+
+.Truco-section-1-val h3{
     text-align: center;
     margin: 20px;
     font-size: 24px;
 }
 
-.section-1-val ol{
+.Truco-section-1-val ol{
     margin-left: 40px;
 }
-.section-1-val li{
+.Truco-section-1-val li{
     margin: 15px 0;
     font-size: 18px;
 }
 
-.section-1-exp p{
+.Truco-section-1-exp p{
     margin: 20px;
     font-size: 18px;
     text-align: justify;
