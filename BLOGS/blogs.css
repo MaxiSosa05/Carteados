@@ -75,15 +75,6 @@ body{
 }
 
 
-.paso{
-    padding: 15px;
-    color: #0AD138;
-
-    font-size: clamp(48px, 6vw, 72px);
-    font-family: 'Bebas Neue', sans-serif;
-}
-
-
 /*TRUCO BLOG ESPECIFICO*/
 
 
@@ -94,6 +85,7 @@ body{
     width: 95vw;
     height: 100%;
     margin: auto;
+    margin-top: 20px;
    
 
 }
