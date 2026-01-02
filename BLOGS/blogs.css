@@ -6,6 +6,10 @@
 
 body{
     background-image: url("../IMAGENES/fondo-general.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 /* Header Styles ------------------*/
@@ -78,50 +82,90 @@ body{
 /*TRUCO BLOG ESPECIFICO*/
 
 
-.Truco-section-1{
-    background-color: red;
+
+.Truco-section-1 {
     display: flex;
-    justify-content: space-evenly;
-    width: 95vw;
-    height: 100%;
-    margin: auto;
-    margin-top: 20px;
-   
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
 
-}
-
-.Truco-section-1-exp , .Truco-section-1-val{
-    background-color: aqua;
-    outline: #000 solid 1px;
-    height: 50%;
+    width: 95%;
+    max-width: 1200px;
+    margin: 20px auto;
 }
 
 
-.Truco-section-1-exp{
-    width: 75%;
+.Truco-section-1-exp,
+.Truco-section-1-val {
+    background: rgba(0, 0, 0, 0.85); /* negro elegante */
+    border: 1px solid rgba(212, 175, 55, 0.4); /* dorado suave */
+    padding-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
 }
 
-.Truco-section-1-val{
-    width: 25%;
-    overflow-y: auto;
+
+.Truco-section-1-exp {
+    flex: 3;
 }
 
-.Truco-section-1-val h3{
+
+.Truco-section-1-val {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centra verticalmente */
+}
+
+
+
+.Truco-section-1-exp h3,
+.Truco-section-1-val h3 {
+    font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     margin: 20px;
-    font-size: 24px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: #d4af37; /* dorado pro */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
-.Truco-section-1-val ol{
-    margin-left: 40px;
+
+.Truco-section-1-exp p {
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+    text-align: justify;
+    color: #ffffff;
+    line-height: 1.6;
 }
-.Truco-section-1-val li{
+
+
+
+.Truco-section-1-val ol {
+    margin-left: 40px;
+    color: #ffffff;
+}
+
+.Truco-section-1-val li {
     margin: 15px 0;
     font-size: 18px;
+    color: #f5c542; 
 }
 
-.Truco-section-1-exp p{
-    margin: 20px;
-    font-size: 18px;
-    text-align: justify;
+
+
+@media (max-width: 768px) {
+    .Truco-section-1 {
+        flex-direction: column;
+    }
+
+    .Truco-section-1-exp,
+    .Truco-section-1-val {
+        width: 100%;
+    }
+
+    .Truco-section-1-val {
+        justify-content: flex-start;
+    }
 }
